@@ -7,7 +7,7 @@ export const LoginScreen = () => {
     let username = (event.currentTarget[0] as HTMLInputElement).value;
     let password = (event.currentTarget[1] as HTMLInputElement).value;
     let loginParams = { username, password };
-    fetch(`${apiUrl}login`, {
+    fetch(`${apiUrl}register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export const LoginScreen = () => {
         name="password"
       />
       <br />
-      <button type="submit">登录</button>
+      <button type="submit">注册</button>
     </form>
   );
 };
