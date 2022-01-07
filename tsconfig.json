@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "./src",// 默认从这个目目下查找
     "lib": [
       "dom",
       "dom.iterable",
